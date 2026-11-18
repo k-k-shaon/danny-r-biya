@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  iframe {
+    border: none;
+    background: #FAF6EF;
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+  }
+</style>
+</head>
+<body>
+<iframe id="mobile-view" src="about:blank"></iframe>
+<script>
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    const w = params.get('w') || '360';
+    const h = params.get('h') || '800';
+    const state = params.get('state') || '';
+    const time = params.get('time') || '';
+    const guest = params.get('guest') || '';
+    
+    const frame = document.getElementById('mobile-view');
+    frame.style.width = w + 'px';
+    frame.style.height = h + 'px';
+
+    const q = [];
+    if (state) q.push('state=' + encodeURIComponent(state));
+    if (time !== '') q.push('time=' + encodeURIComponent(time));
+    if (guest) q.push('guest=' + encodeURIComponent(guest));
+    
+    const src = 'index.html' + (q.length ? '?' + q.join('&') : '');
+
+    frame.onload = function() {
+      try {
+        const doc = frame.contentDocument || frame.contentWindow.document;
+        const win = frame.contentWindow;
+
+        let targetId = "";
+        if (state === "countdown") targetId = "countdown-section";
+        else if (state === "story") targetId = "story-section";
+        else if (state === "reception") targetId = "reception-section";
+        else if (state === "timeline") targetId = "timeline-section";
+        else if (state === "families") targetId = "families-section";
+        else if (state === "venue") targetId = "venue-section";
+        else if (state === "footer") targetId = "footer";
+
+        if (targetId) {
+          const el = doc.getElementById(targetId);
+          if (el) {
+            const top = el.offsetTop;
+            win.scrollTo(0, top);
+            doc.documentElement.scrollTop = top;
+            doc.body.scrollTop = top;
+          }
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    };
+
+    frame.src = src;
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#162B22">
+  <meta name="description" content="Wedding Reception of Srabon & Reyana — Saturday, 2 January 2027 at Wari Party Center, Dhaka.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Srabon & Reyana — Wedding Reception Invitation">
+  <meta property="og:description" content="Together with their families, Srabon & Reyana cordially invite you to celebrate their wedding reception on Saturday, 2 January 2027 at Wari Party Center, Dhaka.">
+  <meta property="og:type" content="website">
+
+  <!-- Inline SVG Favicon (Zero external file dependencies) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23162B22'/%3E%3Cpath d='M16 7 C12 12 7 14 7 19 C7 23 10 26 16 26 C22 26 25 23 25 19 C25 14 20 12 16 7 Z' fill='%23C9A96A'/%3E%3C/svg%3E">
+
+  <title>Srabon &amp; Reyana — Wedding Reception</title>
+
+  <!-- Google Fonts (Swap enabled with system fallbacks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Graceful Fallback if JS is disabled: Envelope hides so content is directly accessible -->
+  <noscript>
+    <style>
+      #envelope-overlay { display: none !important; }
+      .reveal-on-scroll { opacity: 1 !important; transform: none !important; }
+      .story-p { opacity: 1 !important; transform: none !important; }
+      .draw-path, .reception-gold-frame-svg rect, .reception-gold-frame-svg path { stroke-dashoffset: 0 !important; }
+    </style>
+  </noscript>
+
+  <!-- Hard Reliability Rule: Classic defer scripts, config first then app -->
+  <script defer src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       SVG SPRITE DEFINITIONS (Painterly Mediterranean Botanical Library)
+       ====================================================================== -->
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- Gradients for Painterly Botanical Artwork -->
+      <radialGradient id="grad-peony-blush" cx="50%" cy="40%" r="65%">
+        <stop offset="0%" stop-color="#FAF6EF" />
+        <stop offset="40%" stop-color="#FCE4EC" />
+        <stop offset="80%" stop-color="#F4C9D3" />
+        <stop offset="100%" stop-color="#E29CAE" />
+      </radialGradient>
+
+      <radialGradient id="grad-peony-white" cx="50%" cy="40%" r="65%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="50%" stop-color="#FAF6EF" />
+        <stop offset="85%" stop-color="#EFE7DA" />
+        <stop offset="100%" stop-color="#DDD3C1" />
+      </radialGradient>
+
+      <radialGradient id="grad-rose-lavender" cx="45%" cy="35%" r="65%">
+        <stop offset="0%" stop-color="#FAF6EF" />
+        <stop offset="45%" stop-color="#E9E3F3" />
+        <stop offset="80%" stop-color="#D1C0E6" />
+        <stop offset="100%" stop-color="#AF97CC" />
+      </radialGradient>
+
+      <radialGradient id="grad-anemone-blue" cx="50%" cy="45%" r="60%">
+        <stop offset="0%" stop-color="#FAF6EF" />
+        <stop offset="40%" stop-color="#D2E1EF" />
+        <stop offset="80%" stop-color="#A9C4DE" />
+        <stop offset="100%" stop-color="#7B9BBF" />
+      </radialGradient>
+
+      <linearGradient id="grad-leaf-sage" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#A2CDC9" />
+        <stop offset="50%" stop-color="#8DC1BE" />
+        <stop offset="100%" stop-color="#4E8A86" />
+      </linearGradient>
+
+      <linearGradient id="grad-leaf-deep" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3D6A56" />
+        <stop offset="50%" stop-color="#1F3A2E" />
+        <stop offset="100%" stop-color="#162B22" />
+      </linearGradient>
+
+      <linearGradient id="grad-gold-metallic" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EEDFB8" />
+        <stop offset="40%" stop-color="#C9A96A" />
+        <stop offset="70%" stop-color="#DFCA95" />
+        <stop offset="100%" stop-color="#9C7B3B" />
+      </linearGradient>
+
+      <linearGradient id="grad-cliff" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#D4C2AA" />
+        <stop offset="50%" stop-color="#A58C73" />
+        <stop offset="100%" stop-color="#6F5844" />
+      </linearGradient>
+
+      <!-- 1. Rich Layered Peony (Blush) -->
+      <symbol id="peony-blush" viewBox="0 0 100 100">
+        <g transform="translate(50, 50)">
+          <!-- Outer Ring Petals -->
+          <path d="M0 0 C-18 -28 -14 -46 0 -48 C14 -46 18 -28 0 0 Z" fill="url(#grad-peony-blush)" />
+          <path d="M0 0 C-18 -28 -14 -46 0 -48 C14 -46 18 -28 0 0 Z" fill="url(#grad-peony-blush)" transform="rotate(60)" />
+          <path d="M0 0 C-18 -28 -14 -46 0 -48 C14 -46 18 -28 0 0 Z" fill="url(#grad-peony-blush)" transform="rotate(120)" />
+          <path d="M0 0 C-18 -28 -14 -46 0 -48 C14 -46 18 -28 0 0 Z" fill="url(#grad-peony-blush)" transform="rotate(180)" />
+          <path d="M0 0 C-18 -28 -14 -46 0 -48 C14 -46 18 -28 0 0 Z" fill="url(#grad-peony-blush)" transform="rotate(240)" />
+          <path d="M0 0 C-18 -28 -14 -46 0 -48 C14 -46 18 -28 0 0 Z" fill="url(#grad-peony-blush)" transform="rotate(300)" />
+          <!-- Middle Ring Petals -->
+          <path d="M0 0 C-14 -20 -10 -36 0 -36 C10 -36 14 -20 0 0 Z" fill="url(#grad-peony-blush)" opacity="0.95" transform="rotate(30)" />
+          <path d="M0 0 C-14 -20 -10 -36 0 -36 C10 -36 14 -20 0 0 Z" fill="url(#grad-peony-blush)" opacity="0.95" transform="rotate(90)" />
+          <path d="M0 0 C-14 -20 -10 -36 0 -36 C10 -36 14 -20 0 0 Z" fill="url(#grad-peony-blush)" opacity="0.95" transform="rotate(150)" />
+          <path d="M0 0 C-14 -20 -10 -36 0 -36 C10 -36 14 -20 0 0 Z" fill="url(#grad-peony-blush)" opacity="0.95" transform="rotate(210)" />
+          <path d="M0 0 C-14 -20 -10 -36 0 -36 C10 -36 14 -20 0 0 Z" fill="url(#grad-peony-blush)" opacity="0.95" transform="rotate(270)" />
+          <path d="M0 0 C-14 -20 -10 -36 0 -36 C10 -36 14 -20 0 0 Z" fill="url(#grad-peony-blush)" opacity="0.95" transform="rotate(330)" />
+          <!-- Inner Cupped Petals -->
+          <path d="M-10 -5 C-12 -18 12 -18 10 -5 C8 4 -8 4 -10 -5 Z" fill="#F4C9D3" stroke="#E29CAE" stroke-width="0.75" />
+          <path d="M-7 -10 C-10 -20 10 -20 7 -10 C5 -3 -5 -3 -7 -10 Z" fill="#FAF6EF" opacity="0.9" />
+          <!-- Golden Center Stamen -->
+          <circle cx="0" cy="0" r="6" fill="#C9A96A" />
+          <circle cx="-2" cy="-2" r="1.5" fill="#EEDFB8" />
+          <circle cx="2" cy="-2" r="1.5" fill="#EEDFB8" />
+          <circle cx="0" cy="2" r="1.5" fill="#EEDFB8" />
+        </g>
+      </symbol>
+
+      <!-- 2. Rich Layered Peony (White Silk) -->
+      <symbol id="peony-white" viewBox="0 0 100 100">
+        <g transform="translate(50, 50)">
+          <path d="M0 0 C-18 -28 -14 -46 0 -48 C14 -46 18 -28 0 0 Z" fill="url(#grad-peony-white)" stroke="rgba(201, 169, 106, 0.3)" stroke-width="0.5" />
+          <path d="M0 0 C-18 -28 -14 -46 0 -48 C14 -46 18 -28 0 0 Z" fill="url(#grad-peony-white)" stroke="rgba(201, 169, 106, 0.3)" stroke-width="0.5" transform="rotate(60)" />
+          <path d="M0 0 C-18 -28 -14 -46 0 -48 C14 -46 18 -28 0 0 Z" fill="url(#grad-peony-white)" stroke="rgba(201, 169, 106, 0.3)" stroke-width="0.5" transform="rotate(120)" />
+          <path d="M0 0 C-18 -28 -14 -46 0 -48 C14 -46 18 -28 0 0 Z" fill="url(#grad-peony-white)" stroke="rgba(201, 169, 106, 0.3)" stroke-width="0.5" transform="rotate(180)" />
+          <path d="M0 0 C-18 -28 -14 -46 0 -48 C14 -46 18 -28 0 0 Z" fill="url(#grad-peony-white)" stroke="rgba(201, 169, 106, 0.3)" stroke-width="0.5" transform="rotate(240)" />
+          <path d="M0 0 C-18 -28 -14 -46 0 -48 C14 -46 18 -28 0 0 Z" fill="url(#grad-peony-white)" stroke="rgba(201, 169, 106, 0.3)" stroke-width="0.5" transform="rotate(300)" />
+          <path d="M0 0 C-14 -20 -10 -36 0 -36 C10 -36 14 -20 0 0 Z" fill="url(#grad-peony-white)" opacity="0.95" transform="rotate(30)" />
+          <path d="M0 0 C-14 -20 -10 -36 0 -36 C10 -36 14 -20 0 0 Z" fill="url(#grad-peony-white)" opacity="0.95" transform="rotate(90)" />
+          <path d="M0 0 C-14 -20 -10 -36 0 -36 C10 -36 14 -20 0 0 Z" fill="url(#grad-peony-white)" opacity="0.95" transform="rotate(150)" />
+          <path d="M0 0 C-14 -20 -10 -36 0 -36 C10 -36 14 -20 0 0 Z" fill="url(#grad-peony-white)" opacity="0.95" transform="rotate(210)" />
+          <circle cx="0" cy="0" r="5" fill="#C9A96A" />
+        </g>
+      </symbol>
+
+      <!-- 3. Lavender Swirl Rose -->
+      <symbol id="rose-lavender" viewBox="0 0 80 80">
+        <g transform="translate(40, 40)">
+          <path d="M0 0 C-14 -22 -8 -34 0 -34 C8 -34 14 -22 0 0 Z" fill="url(#grad-rose-lavender)" />
+          <path d="M0 0 C-14 -22 -8 -34 0 -34 C8 -34 14 -22 0 0 Z" fill="url(#grad-rose-lavender)" transform="rotate(72)" />
+          <path d="M0 0 C-14 -22 -8 -34 0 -34 C8 -34 14 -22 0 0 Z" fill="url(#grad-rose-lavender)" transform="rotate(144)" />
+          <path d="M0 0 C-14 -22 -8 -34 0 -34 C8 -34 14 -22 0 0 Z" fill="url(#grad-rose-lavender)" transform="rotate(216)" />
+          <path d="M0 0 C-14 -22 -8 -34 0 -34 C8 -34 14 -22 0 0 Z" fill="url(#grad-rose-lavender)" transform="rotate(288)" />
+          <circle cx="0" cy="0" r="4" fill="#C9A96A" />
+        </g>
+      </symbol>
+
+      <!-- 4. Mediterranean Anemone (Dusty Blue) -->
+      <symbol id="anemone-blue" viewBox="0 0 80 80">
+        <g transform="translate(40, 40)">
+          <path d="M0 0 C-15 -22 -6 -32 0 -32 C6 -32 15 -22 0 0 Z" fill="url(#grad-anemone-blue)" />
+          <path d="M0 0 C-15 -22 -6 -32 0 -32 C6 -32 15 -22 0 0 Z" fill="url(#grad-anemone-blue)" transform="rotate(45)" />
+          <path d="M0 0 C-15 -22 -6 -32 0 -32 C6 -32 15 -22 0 0 Z" fill="url(#grad-anemone-blue)" transform="rotate(90)" />
+          <path d="M0 0 C-15 -22 -6 -32 0 -32 C6 -32 15 -22 0 0 Z" fill="url(#grad-anemone-blue)" transform="rotate(135)" />
+          <path d="M0 0 C-15 -22 -6 -32 0 -32 C6 -32 15 -22 0 0 Z" fill="url(#grad-anemone-blue)" transform="rotate(180)" />
+          <path d="M0 0 C-15 -22 -6 -32 0 -32 C6 -32 15 -22 0 0 Z" fill="url(#grad-anemone-blue)" transform="rotate(225)" />
+          <path d="M0 0 C-15 -22 -6 -32 0 -32 C6 -32 15 -22 0 0 Z" fill="url(#grad-anemone-blue)" transform="rotate(270)" />
+          <path d="M0 0 C-15 -22 -6 -32 0 -32 C6 -32 15 -22 0 0 Z" fill="url(#grad-anemone-blue)" transform="rotate(315)" />
+          <circle cx="0" cy="0" r="7" fill="#162B22" />
+          <circle cx="0" cy="0" r="4" fill="#C9A96A" />
+        </g>
+      </symbol>
+
+      <!-- 5. Olive Branch with Veins -->
+      <symbol id="olive-branch" viewBox="0 0 90 50">
+        <path d="M5 45 Q35 30 85 5" fill="none" stroke="#4E8A86" stroke-width="1.8" stroke-linecap="round" />
+        <!-- Leaves -->
+        <path d="M25 36 C35 24 50 25 55 18 C42 22 30 30 25 36 Z" fill="url(#grad-leaf-sage)" />
+        <path d="M40 28 C50 16 65 17 70 10 C57 14 45 22 40 28 Z" fill="url(#grad-leaf-sage)" />
+        <path d="M15 42 C20 30 32 30 35 25 C26 28 18 35 15 42 Z" fill="url(#grad-leaf-deep)" opacity="0.85" />
+        <path d="M60 18 C70 8 82 9 86 3 C74 7 64 13 60 18 Z" fill="url(#grad-leaf-sage)" />
+      </symbol>
+
+      <!-- 6. Eucalyptus Spray -->
+      <symbol id="eucalyptus-spray" viewBox="0 0 60 100">
+        <path d="M30 95 Q30 50 30 5" fill="none" stroke="#4E8A86" stroke-width="1.5" stroke-linecap="round" />
+        <ellipse cx="20" cy="80" rx="14" ry="10" transform="rotate(-25 20 80)" fill="url(#grad-leaf-sage)" opacity="0.9" />
+        <ellipse cx="40" cy="70" rx="14" ry="10" transform="rotate(25 40 70)" fill="url(#grad-leaf-sage)" opacity="0.85" />
+        <ellipse cx="22" cy="50" rx="12" ry="8" transform="rotate(-20 22 50)" fill="url(#grad-leaf-sage)" opacity="0.9" />
+        <ellipse cx="38" cy="40" rx="12" ry="8" transform="rotate(20 38 40)" fill="url(#grad-leaf-sage)" opacity="0.85" />
+        <ellipse cx="25" cy="22" rx="10" ry="7" transform="rotate(-15 25 22)" fill="url(#grad-leaf-sage)" opacity="0.95" />
+        <ellipse cx="34" cy="12" rx="8" ry="6" transform="rotate(15 34 12)" fill="url(#grad-leaf-sage)" />
+      </symbol>
+
+      <!-- 7. Lavender Sprig -->
+      <symbol id="lavender-sprig" viewBox="0 0 30 90">
+        <path d="M15 90 L15 15" stroke="#4E8A86" stroke-width="1.2" />
+        <!-- Florets -->
+        <ellipse cx="11" cy="55" rx="4" ry="2.5" fill="#AF97CC" transform="rotate(-20 11 55)" />
+        <ellipse cx="19" cy="50" rx="4" ry="2.5" fill="#AF97CC" transform="rotate(20 19 50)" />
+        <ellipse cx="11" cy="40" rx="4" ry="2.5" fill="#D1C0E6" transform="rotate(-20 11 40)" />
+        <ellipse cx="19" cy="35" rx="4" ry="2.5" fill="#D1C0E6" transform="rotate(20 19 35)" />
+        <ellipse cx="12" cy="25" rx="3.5" ry="2" fill="#E9E3F3" transform="rotate(-15 12 25)" />
+        <ellipse cx="18" cy="20" rx="3.5" ry="2" fill="#E9E3F3" transform="rotate(15 18 20)" />
+        <circle cx="15" cy="12" r="2.5" fill="#FAF6EF" />
+      </symbol>
+
+      <!-- 8. Cypress Tree -->
+      <symbol id="symbol-cypress" viewBox="0 0 40 120">
+        <path d="M18 100 L22 100 L21 118 L19 118 Z" fill="#4E3B2B" />
+        <path d="M20 2 C12 25 8 50 8 85 C8 98 12 104 20 104 C28 104 32 98 32 85 C32 50 28 25 20 2 Z" fill="#1F3A2E" />
+        <path d="M20 10 C15 30 12 55 12 80 C15 65 17 40 20 10 Z" fill="#2E5242" opacity="0.6" />
+        <path d="M20 15 C24 35 27 60 26 82 C24 68 22 45 20 15 Z" fill="#162B22" opacity="0.8" />
+      </symbol>
+
+      <!-- 9. Lush Corner Arrangement (Composed Bouquet) -->
+      <symbol id="floral-corner-lush" viewBox="0 0 160 160">
+        <g>
+          <!-- Background Sprigs -->
+          <use href="#eucalyptus-spray" x="0" y="0" width="80" height="120" transform="rotate(-30 40 60)" />
+          <use href="#olive-branch" x="40" y="-10" width="100" height="60" transform="rotate(15 80 20)" />
+          <use href="#lavender-sprig" x="70" y="10" width="30" height="80" transform="rotate(40 85 50)" />
+          <!-- Main Peonies and Roses -->
+          <use href="#peony-blush" x="15" y="25" width="82" height="82" />
+          <use href="#rose-lavender" x="65" y="45" width="56" height="56" />
+          <use href="#anemone-blue" x="35" y="75" width="50" height="50" />
+          <use href="#peony-white" x="75" y="10" width="48" height="48" />
+          <!-- Small Accent Dots (Baby's-breath) -->
+          <circle cx="115" cy="55" r="2.5" fill="#FAF6EF" />
+          <circle cx="125" cy="62" r="2" fill="#FAF6EF" />
+          <circle cx="110" cy="70" r="2.2" fill="#FAF6EF" />
+          <circle cx="50" cy="125" r="2.5" fill="#FAF6EF" />
+          <circle cx="62" cy="130" r="2" fill="#FAF6EF" />
+        </g>
+      </symbol>
+
+      <!-- 10. Horizontal Floral Garland Swag -->
+      <symbol id="floral-garland" viewBox="0 0 320 60">
+        <g transform="translate(160, 30)">
+          <!-- Central Rose & Flanking Peonies -->
+          <use href="#peony-blush" x="-25" y="-25" width="50" height="50" />
+          <use href="#peony-white" x="-75" y="-20" width="40" height="40" />
+          <use href="#rose-lavender" x="35" y="-20" width="40" height="40" />
+          <use href="#olive-branch" x="-140" y="-15" width="70" height="35" />
+          <use href="#olive-branch" x="70" y="-15" width="70" height="35" transform="scale(-1, 1)" />
+          <use href="#anemone-blue" x="-105" y="-15" width="30" height="30" />
+          <use href="#anemone-blue" x="75" y="-15" width="30" height="30" />
+        </g>
+      </symbol>
+
+      <!-- 11. Botanical Wreath -->
+      <symbol id="floral-wreath" viewBox="0 0 120 120">
+        <g transform="translate(60, 60)">
+          <circle cx="0" cy="0" r="46" fill="none" stroke="#C9A96A" stroke-width="1.2" stroke-dasharray="3 3" />
+          <!-- Wreath Foliage & Accents -->
+          <use href="#peony-blush" x="-16" y="-52" width="32" height="32" />
+          <use href="#peony-white" x="20" y="-40" width="26" height="26" />
+          <use href="#rose-lavender" x="-46" y="-35" width="26" height="26" />
+          <use href="#anemone-blue" x="-50" y="10" width="26" height="26" />
+          <use href="#peony-blush" x="25" y="15" width="28" height="28" />
+          <use href="#peony-white" x="-15" y="32" width="30" height="30" />
+        </g>
+      </symbol>
+
+      <!-- 6 Thin Gold Line Icons (viewBox 0 0 48 48) -->
+      <symbol id="icon-champagne" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 8 L22 18 C23.5 20 23.5 23 22 25 L21 26 C19.5 27.5 17 27.5 15.5 26 L14.5 25 C13 23 13 20 14.5 18 Z" />
+          <path d="M18.5 26.5 L16.5 38" />
+          <path d="M12 38 L21 38" />
+          <path d="M33 8 L26 18 C24.5 20 24.5 23 26 25 L27 26 C28.5 27.5 31 27.5 32.5 26 L33.5 25 C35 23 35 20 33.5 18 Z" />
+          <path d="M29.5 26.5 L31.5 38" />
+          <path d="M27 38 L36 38" />
+          <circle cx="24" cy="9" r="1" fill="currentColor" stroke="none" />
+          <circle cx="21" cy="5" r="0.75" fill="currentColor" stroke="none" />
+          <circle cx="27" cy="4" r="0.75" fill="currentColor" stroke="none" />
+        </g>
+      </symbol>
+
+      <symbol id="icon-bouquet" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 32 L18 42" />
+          <path d="M24 32 L24 43" />
+          <path d="M27 32 L30 42" />
+          <path d="M19 33 C22 31 26 31 29 33 C26 35 22 35 19 33 Z" fill="currentColor" opacity="0.3" />
+          <path d="M22 34 C20 37 18 39 17 41" />
+          <path d="M26 34 C28 37 30 39 31 41" />
+          <circle cx="24" cy="18" r="6" />
+          <path d="M22 17 C23 15 25 15 26 17 C26 19 24 20 23 19" />
+          <circle cx="15" cy="22" r="5" />
+          <circle cx="33" cy="22" r="5" />
+          <path d="M24 12 C24 8 21 6 18 7" />
+          <path d="M24 12 C24 8 27 6 30 7" />
+        </g>
+      </symbol>
+
+      <symbol id="icon-cutlery" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="24" cy="24" r="14" />
+          <circle cx="24" cy="24" r="9" stroke-dasharray="2 3" />
+          <path d="M6 14 L6 22 C6 24 8 25 8 27 L8 36" />
+          <path d="M4 14 L4 20" />
+          <path d="M8 14 L8 20" />
+          <path d="M41 14 C39 16 39 24 41 27 L41 36" />
+          <path d="M41 14 L43 17 L43 27 L41 27" />
+        </g>
+      </symbol>
+
+      <symbol id="icon-camera" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="7" y="16" width="34" height="22" rx="4" />
+          <path d="M17 16 L20 11 L28 11 L31 16 Z" />
+          <path d="M11 12 L14 12" />
+          <circle cx="24" cy="27" r="7" />
+          <circle cx="24" cy="27" r="3" />
+          <circle cx="35" cy="20" r="1.5" fill="currentColor" stroke="none" />
+        </g>
+      </symbol>
+
+      <symbol id="icon-cake" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="30" width="30" height="11" rx="2" />
+          <path d="M9 35 C14 37 19 33 24 35 C29 37 34 33 39 35" />
+          <rect x="14" y="20" width="20" height="10" rx="2" />
+          <path d="M14 24 C19 26 24 22 29 24 C31 25 33 24 34 24" />
+          <rect x="19" y="12" width="10" height="8" rx="2" />
+          <path d="M22 8 C22 6 24 6 24 8 C24 6 26 6 26 8 C26 10 24 11 24 11 C24 11 22 10 22 8 Z" fill="currentColor" stroke="none" />
+          <path d="M6 41 L42 41" />
+        </g>
+      </symbol>
+
+      <symbol id="icon-heart" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 16 C18 12 12 13 10 17 C7 23 13 29 21 35 C29 29 35 23 32 17 C30 13 24 12 21 16 Z" />
+          <path d="M28 20 C32 16 38 18 39 22 C41 27 36 32 29 37" stroke-dasharray="3 3" />
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ======================================================================
+       BACKGROUND MUSIC & FLOATING TOGGLE
+       ====================================================================== -->
+  <audio id="bg-audio" loop preload="none"></audio>
+  <button id="music-toggle-btn" class="music-toggle hidden" aria-label="Toggle background music" title="Toggle Music">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18V5l12-2v13" />
+      <circle cx="6" cy="18" r="3" />
+      <circle cx="18" cy="16" r="3" />
+    </svg>
+  </button>
+
+  <!-- ======================================================================
+       SECTION 1: 3D ENVELOPE INTRO (Luxury Painted Wedding Envelope)
+       ====================================================================== -->
+  <section id="envelope-overlay" aria-label="Wedding Envelope Invitation">
+    
+    <!-- Background Slow Drifting Petals behind Envelope -->
+    <div class="envelope-bg-petals" aria-hidden="true">
+      <div class="envelope-drift-petal p1"></div>
+      <div class="envelope-drift-petal p2"></div>
+      <div class="envelope-drift-petal p3"></div>
+      <div class="envelope-drift-petal p4"></div>
+      <div class="envelope-drift-petal p5"></div>
+    </div>
+
+    <div class="envelope-stage">
+      <div id="envelope-container" role="button" tabindex="0" aria-label="Tap to open the wedding reception invitation">
+        
+        <!-- Back Base & Luxury Dark-Green Lining -->
+        <div class="envelope-back">
+          <div class="envelope-lining">
+            <svg class="lining-pattern" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <path d="M0 0 L100 100 M100 0 L0 100" stroke="#C9A96A" stroke-width="0.8" opacity="0.3" />
+              <circle cx="50" cy="50" r="30" stroke="#C9A96A" stroke-width="0.8" fill="none" opacity="0.3" />
+              <use href="#peony-blush" x="25" y="25" width="50" height="50" opacity="0.7" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- The Invitation Card nestled inside (Miniature Hero Replica for seamless FLIP zoom) -->
+        <div id="envelope-card">
+          <div class="envelope-card-inner">
+            <!-- Miniature Floral Corner Frames on Card -->
+            <svg class="card-mini-corner card-corner-tl" viewBox="0 0 80 80">
+              <path d="M8 70 L8 8 L70 8" fill="none" stroke="#C9A96A" stroke-width="1.2" />
+              <use href="#peony-blush" x="2" y="2" width="26" height="26" />
+            </svg>
+            <svg class="card-mini-corner card-corner-tr" viewBox="0 0 80 80">
+              <path d="M8 70 L8 8 L70 8" fill="none" stroke="#C9A96A" stroke-width="1.2" />
+              <use href="#rose-lavender" x="2" y="2" width="24" height="24" />
+            </svg>
+
+            <!-- Card Monogram -->
+            <div class="envelope-card-monogram">
+              <svg viewBox="0 0 60 60" fill="none">
+                <circle cx="30" cy="30" r="26" stroke="#C9A96A" stroke-dasharray="3 3" />
+                <use href="#floral-wreath" x="5" y="5" width="50" height="50" opacity="0.8" />
+                <text x="30" y="37" font-family="'Cormorant Garamond', Georgia, serif" font-size="22" font-weight="700" fill="#162B22" text-anchor="middle">S &amp; R</text>
+              </svg>
+            </div>
+
+            <p class="envelope-card-opening">Together with their families</p>
+            <h2 class="envelope-card-names">Srabon &amp; Reyana</h2>
+            <div class="envelope-card-divider">
+              <span class="card-line"></span>
+              <span class="card-event-badge">Wedding Reception</span>
+              <span class="card-line"></span>
+            </div>
+            <p class="envelope-card-date">Saturday, 2 January 2027</p>
+            <p class="envelope-card-venue">Wari Party Center</p>
+          </div>
+        </div>
+
+        <!-- Lower Front Pocket with Coastal Landscape Art & Overlapping Florals -->
+        <div class="envelope-pocket">
+          <svg class="pocket-artwork" viewBox="0 0 380 480" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="pocket-sky" x1="0" y1="0" x2="0" y2="100%">
+                <stop offset="0%" stop-color="#E9E3F3" />
+                <stop offset="50%" stop-color="#FAF6EF" />
+                <stop offset="100%" stop-color="#F4C9D3" />
+              </linearGradient>
+            </defs>
+            <!-- Sky -->
+            <rect width="100%" height="100%" fill="url(#pocket-sky)" />
+            <!-- Soft Distant Cloud Blobs -->
+            <path d="M30 160 Q60 140 100 155 Q130 135 170 150 Q200 165 170 175 Q120 180 50 175 Z" fill="#FFFFFF" opacity="0.55" />
+            <path d="M220 140 Q250 125 290 140 Q330 130 350 145 Q370 160 340 170 Q280 175 230 165 Z" fill="#FFFFFF" opacity="0.45" />
+            <!-- Sea Waves Bands -->
+            <path d="M0 260 C90 245 180 270 270 255 C320 248 360 255 380 260 L380 480 L0 480 Z" fill="#A9C4DE" opacity="0.75" />
+            <path d="M0 295 C70 285 160 305 240 290 C300 280 350 295 380 290 L380 480 L0 480 Z" fill="#8DC1BE" opacity="0.85" />
+            <path d="M0 330 C80 320 170 340 260 325 C310 318 360 330 380 325 L380 480 L0 480 Z" fill="#4E8A86" />
+            <!-- Mediterranean Cliffs -->
+            <path d="M0 255 L60 235 L95 275 L130 310 L90 480 L0 480 Z" fill="url(#grad-cliff)" />
+            <path d="M380 240 L310 220 L275 265 L250 305 L280 480 L380 480 Z" fill="url(#grad-cliff)" />
+            <!-- Cypress Trees -->
+            <use href="#symbol-cypress" x="40" y="175" width="28" height="85" />
+            <use href="#symbol-cypress" x="62" y="190" width="22" height="65" />
+            <use href="#symbol-cypress" x="310" y="165" width="32" height="95" />
+            <use href="#symbol-cypress" x="285" y="185" width="24" height="75" />
+            <!-- Gold Trim Line along the pocket crest V-neck -->
+            <path d="M0 0 L190 230 L380 0" fill="none" stroke="#C9A96A" stroke-width="2" />
+          </svg>
+
+          <!-- Lush Overlapping Floral Clusters Spilling Over Pocket Edges -->
+          <div class="pocket-floral-cluster pocket-floral-left">
+            <svg viewBox="0 0 160 160" width="120" height="120">
+              <use href="#floral-corner-lush" />
+            </svg>
+          </div>
+          <div class="pocket-floral-cluster pocket-floral-right">
+            <svg viewBox="0 0 160 160" width="120" height="120" style="transform: scaleX(-1);">
+              <use href="#floral-corner-lush" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Triangular Folding Top Flap with Floral Crest -->
+        <div id="envelope-flap">
+          <div class="flap-front">
+            <svg class="flap-artwork" viewBox="0 0 380 200" preserveAspectRatio="none">
+              <rect width="100%" height="100%" fill="url(#pocket-sky)" />
+              <path d="M0 0 L190 200 L380 0 Z" fill="none" stroke="#C9A96A" stroke-width="2" />
+              <!-- Rich Floral Cluster at the flap tip -->
+              <g transform="translate(190, 145)">
+                <use href="#peony-blush" x="-26" y="-30" width="52" height="52" />
+                <use href="#rose-lavender" x="-48" y="-22" width="32" height="32" />
+                <use href="#anemone-blue" x="16" y="-22" width="32" height="32" />
+                <use href="#olive-branch" x="-60" y="-12" width="36" height="20" />
+                <use href="#olive-branch" x="24" y="-12" width="36" height="20" transform="scale(-1, 1)" />
+              </g>
+            </svg>
+          </div>
+          <div class="flap-back"></div>
+        </div>
+
+        <!-- Wide Silk Belly Band -->
+        <div id="envelope-bellyband">
+          <div class="bellyband-silk-sheen"></div>
+          <span class="bellyband-text">SRABON &amp; REYANA</span>
+        </div>
+
+        <!-- Satin Ribbon Bow with Folds and Shimmer (Centered on Belly Band) -->
+        <div id="envelope-bow" aria-hidden="true">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Left Ribbon Loop -->
+            <path d="M50 48 C32 30 6 30 12 48 C18 64 42 54 50 50 Z" fill="url(#grad-gold-metallic)" stroke="#8A6A2C" stroke-width="0.8" />
+            <path d="M20 44 C25 40 38 46 48 49" stroke="#FFF" stroke-width="1" opacity="0.65" />
+            <!-- Right Ribbon Loop -->
+            <path d="M50 48 C68 30 94 30 88 48 C82 64 58 54 50 50 Z" fill="url(#grad-gold-metallic)" stroke="#8A6A2C" stroke-width="0.8" />
+            <path d="M80 44 C75 40 62 46 52 49" stroke="#FFF" stroke-width="1" opacity="0.65" />
+            <!-- Left Ribbon Tail with graceful drape -->
+            <path d="M46 52 C38 70 30 84 16 92 C24 85 30 82 38 80 L48 54 Z" fill="url(#grad-gold-metallic)" stroke="#8A6A2C" stroke-width="0.8" />
+            <path d="M36 68 C32 76 25 84 20 88" stroke="#FFF" stroke-width="0.8" opacity="0.5" />
+            <!-- Right Ribbon Tail -->
+            <path d="M54 52 C62 70 70 84 84 92 C76 85 70 82 62 80 L52 54 Z" fill="url(#grad-gold-metallic)" stroke="#8A6A2C" stroke-width="0.8" />
+            <path d="M64 68 C68 76 75 84 80 88" stroke="#FFF" stroke-width="0.8" opacity="0.5" />
+            <!-- Center Knot with highlight -->
+            <ellipse cx="50" cy="50" rx="10" ry="9" fill="url(#grad-gold-metallic)" stroke="#74551E" stroke-width="1.2" />
+            <circle cx="48" cy="48" r="3.5" fill="#FFF" opacity="0.5" />
+          </svg>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Controls Below Envelope -->
+    <div class="envelope-controls">
+      <button id="envelope-hint">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+        </svg>
+        <span>Tap to Open Invitation</span>
+      </button>
+      <a href="#hero" id="skip-envelope-btn" class="skip-btn">Skip to Invitation</a>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       MAIN CONTENT WRAPPER (Desktop centered 480px stage)
+       ====================================================================== -->
+  <div class="page-stage">
+    <main id="main-wrapper">
+
+      <!-- ==================================================================
+           SECTION 2: HERO
+           ================================================================== -->
+      <section id="hero" class="hero-section" aria-label="Couple and Reception Introduction">
+        
+        <!-- Animated Corner Frames (Draw themselves once via stroke-dashoffset) -->
+        <svg id="hero-frame-svg" class="hero-corner-frame hero-corner-tl" viewBox="0 0 140 140">
+          <path class="draw-path" d="M10 130 L10 10 L130 10" fill="none" stroke="#C9A96A" stroke-width="1.8" />
+          <path class="draw-path" d="M18 120 L18 18 L120 18" fill="none" stroke="#C9A96A" stroke-width="0.9" stroke-dasharray="3 3" />
+          <use href="#floral-corner-lush" x="0" y="0" width="100" height="100" />
+        </svg>
+        <svg class="hero-corner-frame hero-corner-tr" viewBox="0 0 140 140">
+          <path class="draw-path" d="M10 130 L10 10 L130 10" fill="none" stroke="#C9A96A" stroke-width="1.8" />
+          <path class="draw-path" d="M18 120 L18 18 L120 18" fill="none" stroke="#C9A96A" stroke-width="0.9" stroke-dasharray="3 3" />
+          <use href="#floral-corner-lush" x="0" y="0" width="100" height="100" />
+        </svg>
+        <svg class="hero-corner-frame hero-corner-bl" viewBox="0 0 140 140">
+          <path class="draw-path" d="M10 130 L10 10 L130 10" fill="none" stroke="#C9A96A" stroke-width="1.8" />
+          <use href="#floral-corner-lush" x="0" y="0" width="90" height="90" />
+        </svg>
+        <svg class="hero-corner-frame hero-corner-br" viewBox="0 0 140 140">
+          <path class="draw-path" d="M10 130 L10 10 L130 10" fill="none" stroke="#C9A96A" stroke-width="1.8" />
+          <use href="#floral-corner-lush" x="0" y="0" width="90" height="90" />
+        </svg>
+
+        <!-- Floating Petals Container -->
+        <div id="petals-container" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <!-- Personalized Guest Greeting via ?guest=Name parameter -->
+          <div id="guest-greeting-container" class="guest-greeting-pill hidden">
+            <span>Dear </span><span id="guest-greeting-name"></span><span>,</span>
+          </div>
+
+          <p id="hero-opening-line" class="hero-opening reveal-on-scroll">Together with their families</p>
+
+          <div class="hero-names-group reveal-on-scroll delay-1">
+            <h1 id="hero-couple-names" class="couple-name">Srabon &amp; Reyana</h1>
+          </div>
+
+          <div class="hero-event-badge reveal-on-scroll delay-2">
+            <span class="badge-line"></span>
+            <span id="hero-event-title" class="hero-event-title">Wedding Reception</span>
+            <span class="badge-line"></span>
+          </div>
+
+          <div class="hero-details-box reveal-on-scroll delay-3">
+            <p id="hero-date" class="hero-date">Saturday, 2 January 2027</p>
+            <p id="hero-venue" class="hero-venue">Wari Party Center</p>
+          </div>
+
+          <!-- Decorative Floral Garland below hero details -->
+          <div class="hero-floral-divider reveal-on-scroll delay-4" aria-hidden="true">
+            <svg viewBox="0 0 320 60" width="220" height="42">
+              <use href="#floral-garland" />
+            </svg>
+          </div>
+
+          <div class="hero-scroll-indicator" aria-hidden="true">
+            <span>Scroll to celebrate</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 3: COUNTDOWN
+           ================================================================== -->
+      <section id="countdown-section" class="countdown-section" aria-label="Event Countdown">
+        <p class="section-label reveal-on-scroll">The Joyous Countdown</p>
+        <h2 class="section-title reveal-on-scroll">Until Srabon &amp; Reyana Celebrate</h2>
+
+        <div class="countdown-grid reveal-on-scroll delay-1">
+          <!-- Days -->
+          <div class="countdown-card">
+            <div class="digit-box">
+              <span id="countdown-days" class="digit-value">00</span>
+            </div>
+            <span class="countdown-label">Days</span>
+          </div>
+          <!-- Hours -->
+          <div class="countdown-card">
+            <div class="digit-box">
+              <span id="countdown-hours" class="digit-value">00</span>
+            </div>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <!-- Minutes -->
+          <div class="countdown-card">
+            <div class="digit-box">
+              <span id="countdown-minutes" class="digit-value">00</span>
+            </div>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <!-- Seconds -->
+          <div class="countdown-card">
+            <div class="digit-box">
+              <span id="countdown-seconds" class="digit-value">00</span>
+            </div>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+
+        <p id="countdown-message" class="reveal-on-scroll delay-2" style="display: none;"></p>
+      </section>
+
+      <!-- Section Divider Garland -->
+      <div class="section-floral-divider" aria-hidden="true">
+        <svg viewBox="0 0 320 60" width="260" height="48">
+          <use href="#floral-garland" />
+        </svg>
+      </div>
+
+      <!-- ==================================================================
+           SECTION 4: OUR STORY (Parallax Clouds & Painterly Edges)
+           ================================================================== -->
+      <section id="story-section" class="story-section" aria-label="Our Love Story">
+        
+        <!-- 3 Parallax Cloud Layers (translate3d, rAF throttled) -->
+        <svg id="parallax-cloud-1" class="cloud-layer cloud-layer-1" viewBox="0 0 600 120" preserveAspectRatio="none">
+          <path d="M0 60 C80 30 140 30 220 50 C290 10 370 20 440 45 C510 20 570 40 600 60 L600 120 L0 120 Z" fill="#FFFFFF" />
+        </svg>
+        <svg id="parallax-cloud-2" class="cloud-layer cloud-layer-2" viewBox="0 0 600 120" preserveAspectRatio="none">
+          <path d="M0 50 C90 20 180 60 270 30 C350 10 430 40 520 25 C560 18 590 30 600 40 L600 120 L0 120 Z" fill="#FFFFFF" />
+        </svg>
+        <svg id="parallax-cloud-3" class="cloud-layer cloud-layer-3" viewBox="0 0 600 120" preserveAspectRatio="none">
+          <path d="M0 70 C70 45 150 50 230 65 C320 35 410 40 490 60 C550 45 580 55 600 70 L600 120 L0 120 Z" fill="#FFFFFF" />
+        </svg>
+
+        <div class="story-container reveal-on-scroll">
+          <p class="section-label">A Mediterranean Romance</p>
+          <h2 id="story-title" class="section-title">Our Story</h2>
+          <p id="story-tagline" class="story-tagline">From quiet conversations to a lifetime of love</p>
+
+          <div id="story-text-container" class="story-paragraphs">
+            <!-- Paragraphs populated by config.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Wave Transition to Dark Section -->
+      <div class="wave-divider wave-to-dark" aria-hidden="true">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C150,90 350,-40 500,50 C650,140 900,10 1200,60 L1200,120 L0,120 Z"></path>
+        </svg>
+      </div>
+
+      <!-- ==================================================================
+           SECTION 5: THE RECEPTION (Dark Deep-Green, Gold Line-Art & Florals)
+           ================================================================== -->
+      <section id="reception-section" class="reception-section" aria-label="Reception Event Details">
+        <div class="reception-frame-wrapper">
+          
+          <!-- Gold Line-Art Frame drawing itself on view entry -->
+          <svg id="reception-frame-svg" class="reception-gold-frame-svg" viewBox="0 0 380 480" preserveAspectRatio="none">
+            <rect x="8" y="8" width="364" height="464" rx="16" />
+            <rect x="15" y="15" width="350" height="450" rx="12" stroke-dasharray="4 4" />
+            <path d="M8 35 L35 8 M345 8 L372 35 M8 445 L35 472 M345 472 L372 445" />
+          </svg>
+
+          <p class="section-label">Cordially Invited To</p>
+          <h2 class="section-title">The Reception</h2>
+
+          <div class="reception-meta-card">
+            <!-- Date & Time -->
+            <div class="reception-meta-item">
+              <svg class="meta-icon-badge" viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <path d="M24 14 L24 24 L30 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              <h3 id="reception-date" class="meta-title">Saturday, 2 January 2027</h3>
+              <p id="reception-time" class="meta-subtitle">7:00 PM onwards</p>
+            </div>
+
+            <!-- Venue & Address -->
+            <div class="reception-meta-item">
+              <svg class="meta-icon-badge" viewBox="0 0 48 48">
+                <path d="M24 6 C16 6 10 12 10 20 C10 30 24 42 24 42 C24 42 38 30 38 20 C38 12 32 6 24 6 Z" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="24" cy="19" r="4" fill="none" stroke="currentColor" stroke-width="1.8" />
+              </svg>
+              <h3 id="reception-venue-name" class="meta-title">Wari Party Center</h3>
+              <p id="reception-venue-address" class="meta-subtitle">Wari, Dhaka</p>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="reception-btn-group">
+            <a id="btn-map" href="#" target="_blank" rel="noopener noreferrer" class="btn-gold">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                <line x1="8" y1="2" x2="8" y2="18"></line>
+                <line x1="16" y1="6" x2="16" y2="22"></line>
+              </svg>
+              <span>View on Google Maps</span>
+            </a>
+
+            <button id="btn-calendar" type="button" class="btn-outline-gold">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span>Add to Calendar (.ics)</span>
+            </button>
+
+            <a id="btn-call" href="#" class="btn-outline-gold">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>Call Venue / Assistance</span>
+            </a>
+          </div>
+
+          <!-- Blush Petals & Gold Foliage Along Bottom Edge of Reception Section -->
+          <div class="reception-bottom-botanical" aria-hidden="true">
+            <svg viewBox="0 0 320 60" width="280" height="52">
+              <use href="#floral-garland" />
+            </svg>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Wave Transition to Light Section -->
+      <div class="wave-divider wave-to-light" aria-hidden="true">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,120 C200,30 450,140 650,40 C850,-60 1050,70 1200,20 L1200,0 L0,0 Z"></path>
+        </svg>
+      </div>
+
+      <!-- ==================================================================
+           SECTION 6: EVENING TIMELINE
+           ================================================================== -->
+      <section id="timeline-section" class="timeline-section" aria-label="Evening Schedule">
+        <p class="section-label" style="text-align: center;">Order of Celebrations</p>
+        <h2 class="section-title" style="text-align: center;">Evening Timeline</h2>
+
+        <div class="timeline-container">
+          <!-- Dynamic ScaleY Line Tracking Scroll -->
+          <div class="timeline-spine">
+            <div id="timeline-progress-line" class="timeline-progress-line"></div>
+          </div>
+
+          <div id="timeline-items-container" class="timeline-items-list">
+            <!-- Rendered dynamically from config.timeline -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Divider Garland -->
+      <div class="section-floral-divider" aria-hidden="true">
+        <svg viewBox="0 0 320 60" width="260" height="48">
+          <use href="#floral-garland" />
+        </svg>
+      </div>
+
+      <!-- ==================================================================
+           SECTION 7: OUR FAMILIES (With Full Formal Names)
+           ================================================================== -->
+      <section id="families-section" class="families-section" aria-label="Family Blessings">
+        <p class="section-label">With the Blessings of</p>
+        <h2 class="section-title">Our Families</h2>
+
+        <div class="families-grid">
+          <!-- Groom's Parents -->
+          <div class="family-card reveal-on-scroll">
+            <div class="family-card-border"></div>
+            <!-- Floral Corner Accents on Family Cards -->
+            <svg class="family-card-floral family-floral-tl" viewBox="0 0 80 80">
+              <use href="#peony-blush" x="0" y="0" width="36" height="36" />
+            </svg>
+            <p id="groom-formal-name" class="family-child-name">Taif Tanjil Srabon</p>
+            <p id="groom-parents-relation" class="family-relation">Son of</p>
+            <h3 id="groom-parents-names" class="family-parents-names">Mr. [Father's Name] &amp; Mrs. [Mother's Name]</h3>
+          </div>
+
+          <!-- Bride's Parents -->
+          <div class="family-card reveal-on-scroll delay-1">
+            <div class="family-card-border"></div>
+            <svg class="family-card-floral family-floral-tr" viewBox="0 0 80 80">
+              <use href="#rose-lavender" x="44" y="0" width="36" height="36" />
+            </svg>
+            <p id="bride-formal-name" class="family-child-name">Sabrina Akter Reyana</p>
+            <p id="bride-parents-relation" class="family-relation">Daughter of</p>
+            <h3 id="bride-parents-names" class="family-parents-names">Mr. [Father's Name] &amp; Mrs. [Mother's Name]</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 8: VENUE & DIRECTIONS
+           ================================================================== -->
+      <section id="venue-section" class="venue-section" aria-label="Location and Travel">
+        <p class="section-label">Getting There</p>
+        <h2 class="section-title">Venue &amp; Directions</h2>
+
+        <div class="venue-card reveal-on-scroll">
+          <div style="display: flex; justify-content: center;">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#C9A96A" stroke-width="1.8">
+              <path d="M24 4 C14 4 6 12 6 22 C6 35 24 46 24 46 C24 46 42 35 42 22 C42 12 34 4 24 4 Z" />
+              <circle cx="24" cy="20" r="6" />
+            </svg>
+          </div>
+          <h3 id="venue-name-display" class="venue-title-text">Wari Party Center</h3>
+          <p id="venue-address-display" class="venue-address-text">
+            Wari, Dhaka
+          </p>
+
+          <a id="venue-map-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-gold" style="margin-top: 0.5rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+              <line x1="8" y1="2" x2="8" y2="18"></line>
+              <line x1="16" y1="6" x2="16" y2="22"></line>
+            </svg>
+            <span>Open in Google Maps</span>
+          </a>
+
+          <div class="venue-parking-box">
+            <p id="venue-parking-note">
+              Dedicated parking and valet assistance available near the venue entrance.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 9: FOOTER (With Painterly Floral Wreath)
+           ================================================================== -->
+      <footer id="footer" class="footer-section">
+        <!-- Painterly Floral Wreath in Footer -->
+        <div class="footer-wreath-box" aria-hidden="true">
+          <svg viewBox="0 0 120 120" width="80" height="80">
+            <use href="#floral-wreath" />
+          </svg>
+        </div>
+
+        <h3 class="footer-thankyou">With all our love and gratitude,</h3>
+        <p id="footer-names" class="footer-names">Srabon &amp; Reyana</p>
+        <p class="footer-credits">#SrabonAndReyana2027 &bull; Forever &amp; Always</p>
+      </footer>
+
+    </main>
+  </div>
+
+</body>
+</html>
